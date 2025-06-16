@@ -1,0 +1,24 @@
+{
+  "name": "commercetools-task-pcgi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "task02": "node ./src/task02_create_customer.js",
+    "task03": "node ./src/task03_create_customer_group.js",
+    "task04": "node ./src/task04_update_customer_group.js"
+  },
+  "author": "Sabeer Ahamed",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@commercetools/platform-sdk": "^8.11.0",
+    "@commercetools/ts-client": "^3.4.1",
+    "dotenv": "^16.5.0",
+    "node-fetch": "^3.3.2"
+  }
+}
