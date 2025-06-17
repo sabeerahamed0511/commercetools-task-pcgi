@@ -9,9 +9,5 @@ const customerDraft = {
 }
 
 createCustomer(customerDraft)
-.then(result => {
-    console.log("Customer created:: ", result)
-    process.env.CUSTOMER_ID = result.customer.id;
-    process.env.CUSTOMER_VERSION = result.customer.version;
-})
+.then(result => console.log("Customer created:: ", result))
 .catch(error => console.error("Error while creating customer:: ", error));
